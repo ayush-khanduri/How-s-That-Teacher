@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textInputLayout">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:id="@+id/editText2"
+        android:hint="What's on your mind?"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32sp"
+        android:text="POST"
+        android:textSize="20sp"
+        android:id="@+id/button7"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorIcons"
+        android:layout_below="@+id/textInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>

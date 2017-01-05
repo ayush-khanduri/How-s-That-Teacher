@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10sp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                android:id="@+id/view">
+
+                <EditText
+                    android:id="@+id/userInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="enter text here"
+                    android:ems="140"
+                    android:inputType="textMultiLine" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkProfanity"
+                android:text="WEBPURIFY.LIVE.RETURN"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="100sp"
+                android:layout_alignParentLeft="true" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_below="@id/checkProfanity"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="responseView"
+                android:textSize="20sp"
+                android:id="@+id/responseView"
+                android:layout_below="@+id/progressBar"
+                android:gravity="center"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="list_divider">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+    <color name="colorPrimary">#0172FF</color>
+    <color name="colorPrimaryDark">#0066E6</color>
+    <color name="colorAccent">#2D363B</color>
+    <color name="colorPrimaryLight">#328DFF</color>
+    <color name="colorPrimaryText">#2B2B2B</color>
+    <color name="colorSecondaryText">#78909C</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#CFD8DC</color>
+
+    <color name="crimson">#FE5858</color>
+    <color name="zumthor">#CFD8DC</color>
+    <color name="seance">#92428E</color>
+    <color name="maroon">#FF4081</color>
+
+</resources>

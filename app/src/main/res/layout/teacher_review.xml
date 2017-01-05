@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.sbuddy.feedback.TeacherReview">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryLight"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="RATING"
+        android:textColor="#fff"
+        android:id="@+id/ABCD"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:background="@color/zumthor"
+                android:layout_height="0sp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0sp"
+                    android:layout_height="50sp"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Discipline"
+                    android:id="@+id/textView4"
+                    android:gravity="center" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0sp"
+                    android:layout_height="50sp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Punctuality"
+                    android:id="@+id/textView5"
+                    android:gravity="center" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:background="@color/zumthor"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0sp"
+                    android:layout_height="50sp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Interest Level"
+                    android:layout_gravity="center"
+                    android:id="@+id/textView6"
+                    android:gravity="center" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar3"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0sp"
+                    android:layout_height="50sp"
+                    android:textSize="20sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Quality of Lecture"
+                    android:gravity="center"
+                    android:id="@+id/textView7"
+                    android:layout_gravity="center" />
+
+
+                <RatingBar
+                    android:id="@+id/ratingBar4"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:background="@color/zumthor"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_weight="3"
+                    android:layout_width="0sp"
+                    android:textSize="20sp"
+                    android:layout_height="50sp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Homework"
+                    android:id="@+id/textView8"
+                    android:gravity="center" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar5"
+                    android:theme="@style/RatingBar"
+                    android:stepSize="0.5"
+                    android:numStars="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:hapticFeedbackEnabled="true"
+                android:background="@color/colorPrimaryDark"
+                style="@style/Base.Widget.AppCompat.Button.Borderless.Colored"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:text="RATE NOW"
+                android:id="@+id/button4"
+                android:layout_marginTop="30sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
